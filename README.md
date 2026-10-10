@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Falak Baharwani — Personal Portfolio Website (Multi-Page Architecture)
 
 A bespoke, responsive personal portfolio website engineered for **Falak Baharwani**, Computer Science and Engineering student at Chandigarh University specializing in Generative AI.
@@ -149,3 +150,7 @@ falak_portfolio/
 
 &copy; 2026 Falak Baharwani. All rights reserved.  
 *"Curious mind. Always learning."*
+=======
+# falak_portfolio
+A personal portfolio website showcasing my skills, projects, education, certifications, and achievements, featuring a premium burgundy, cream, and gold design, interactive Number Systems Playground, and downloadable resume. Built with React, Vite, JavaScript, and CSS.
+>>>>>>> 5dca3d33fd6481170a6ea85ffce0836667837535
