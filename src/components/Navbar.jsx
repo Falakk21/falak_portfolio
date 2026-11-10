@@ -12,13 +12,13 @@ const NAV_ITEMS = [
   { label: 'Internship', path: '/internship' },
   { label: 'Resume', path: '/resume' },
   { label: 'Contact', path: '/contact' },
+  { label: 'Case Study', path: '/case-study' },
 ];
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
-
   // Track scroll state for subtle shadow
   useEffect(() => {
     const handleScroll = () => {

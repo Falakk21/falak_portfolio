@@ -14,6 +14,7 @@ import InternshipPage from './pages/InternshipPage';
 import ResumePage from './pages/ResumePage';
 import ContactPage from './pages/ContactPage';
 import PlaygroundPage from './pages/PlaygroundPage';
+import CaseStudyPage from './pages/CaseStudyPage';
 
 export default function App() {
   const [loadingFinished, setLoadingFinished] = useState(false);
@@ -33,6 +34,7 @@ export default function App() {
           <Route path="/internship" element={<InternshipPage />} />
           <Route path="/resume" element={<ResumePage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/case-study" element={<CaseStudyPage />} />
           <Route path="/playground" element={<PlaygroundPage />} />
           <Route path="/number-systems-playground" element={<Navigate to="/playground" replace />} />
           {/* Wildcard Fallback */}

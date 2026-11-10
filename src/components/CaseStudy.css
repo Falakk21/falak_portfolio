@@ -1,0 +1,123 @@
+.case-study-section {
+  background-color: var(--color-cream-50);
+  min-height: calc(100vh - var(--header-height));
+}
+
+.case-study-container {
+  max-width: 1040px;
+}
+
+.case-study-eyebrow {
+  letter-spacing: 0.18em;
+}
+
+.case-study-section .section-header {
+  max-width: 780px;
+  margin-bottom: 2.5rem;
+}
+
+.case-study-section .section-title {
+  max-width: 760px;
+  font-size: clamp(2.2rem, 5vw, 3.7rem);
+}
+
+.case-study-intro {
+  max-width: 700px;
+  margin: 1.25rem auto 0;
+  font-size: 1rem;
+}
+
+.case-study-viewer {
+  overflow: hidden;
+  border: 1px solid rgba(207, 160, 67, 0.45);
+  border-radius: var(--radius-lg);
+  background: #fff;
+  box-shadow: var(--shadow-card);
+}
+
+.case-study-viewer-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid rgba(207, 160, 67, 0.28);
+  background: linear-gradient(135deg, var(--color-cream-100), #fff);
+}
+
+.case-study-viewer-heading h2 {
+  font-size: 1.15rem;
+}
+
+.case-study-viewer-heading span {
+  color: var(--color-charcoal-muted);
+  font-size: 0.8rem;
+}
+
+.case-study-document {
+  height: min(78vh, 1000px);
+  min-height: 420px;
+  overflow: auto;
+  background: #f7f5f0;
+  -webkit-overflow-scrolling: touch;
+}
+
+.case-study-document .docx-wrapper {
+  padding: clamp(0.75rem, 3vw, 2rem);
+  background: transparent;
+}
+
+.case-study-document .docx {
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 18px rgba(45, 7, 13, 0.12);
+}
+
+.case-study-status,
+.case-study-error {
+  padding: 1rem 1.25rem;
+  color: var(--color-charcoal-muted);
+}
+
+.case-study-status {
+  margin: 0;
+}
+
+.case-study-error {
+  color: var(--color-burgundy-700);
+  background-color: var(--color-burgundy-100);
+}
+
+.case-study-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.case-study-actions a[aria-disabled='true'] {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+  .case-study-viewer-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
+  .case-study-document {
+    height: 70vh;
+    min-height: 360px;
+  }
+
+  .case-study-actions {
+    align-items: stretch;
+    flex-direction: column-reverse;
+  }
+
+  .case-study-actions .btn {
+    justify-content: center;
+  }
+}
